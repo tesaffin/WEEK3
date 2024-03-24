@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scrolling Navbar</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <style>
+    /* Custom styles for navbar */
+    .navbar {
+      background-color:lightcoral ;
+      border: none;
+    }
+    .navbar-brand {
+      margin-left: 15px;
+    }
+    .navbar-header button.navbar-toggle {
+      margin-right: 15px;
+    }
+    .dropdown-menu {
+      width: 100%;
+      background-color:pink;
+    }
+    /* Custom styles for page heading */
+    .page-heading {
+      text-align: center;
+    }
+    /* Custom styles for tall section */
+    .tall-section {
+      background-color: lightcoral;
+      height: 1000px; /* Adjust height as needed */
+    }
+    /* Custom styles for centering menu */
+    .navbar-nav {
+      float: none;
+      margin: 0 auto;
+      display: table;
+      table-layout: fixed;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand " style="margin: 10px; padding: 10px; color: black;" href="#" >Food  LLC</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="nav navbar-nav">
+        <!-- This is for desktop and tablet view -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: black;">Menu <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Chicken</a></li>
+            <li><a href="#">Beef</a></li>
+            <li><a href="#">Sushi</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="container">
+  <h2 class="page-heading ">Our Menu</h2>
+</div>
+
+<div class="container-fluid tall-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <!-- Your content for the tall section goes here -->
+        <!-- For demonstration purposes, adding some placeholder text -->
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero nec nunc placerat, in rutrum eros tristique. Integer fermentum, odio eu accumsan scelerisque, tellus nulla fermentum eros, nec consequat neque sapien a mauris. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ullam tempora consequatur expedita molestias ad ut saepe animi quasi fuga voluptatum, quas, error temporibus consectetur, earum similique? Quasi.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero nec nunc placerat, in rutrum eros tristique. Integer fermentum, odio eu accumsan scelerisque, tellus nulla fermentum eros, nec consequat neque sapien a mauris. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ullam tempora consequatur expedita molestias ad ut saepe animi quasi fuga voluptatum, quas, error temporibus consectetur, earum similique? Quasi.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero nec nunc placerat, in rutrum eros tristique. Integer fermentum, odio eu accumsan scelerisque, tellus nulla fermentum eros, nec consequat neque sapien a mauris. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ullam tempora consequatur expedita molestias ad ut saepe animi quasi fuga voluptatum, quas, error temporibus consectetur, earum similique? Quasi.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis libero nec nunc placerat, in rutrum eros tristique. Integer fermentum, odio eu accumsan scelerisque, tellus nulla fermentum eros, nec consequat neque sapien a mauris. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ullam tempora consequatur expedita molestias ad ut saepe animi quasi fuga voluptatum, quas, error temporibus consectetur, earum similique? Quasi.
+        </p>
+        <!-- Repeat the above paragraph multiple times if needed to make the section tall enough -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
